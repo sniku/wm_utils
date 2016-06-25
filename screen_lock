@@ -1,0 +1,8 @@
+#/bin/bash
+
+# depends on: i3lock
+
+LOCK_BACKGROUND=~/Documents/wallpaper/japan.png
+
+i3lock -t -i $LOCK_BACKGROUND
+
