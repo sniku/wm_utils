@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# launches an urxvt terminal emulator with a random background color
+
+
+n1=256
+random_color=$( printf "#%02x%02x%02x" $(( ($RANDOM % ($n1 - 150)) )) \
+                               $(( ($RANDOM % ($n1 - 200)) )) \
+                               $(( ($RANDOM % ($n1 - 150)) )) )
+
+exec rxvt -tint "$random_color"
+
